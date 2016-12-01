@@ -8,8 +8,8 @@
       <button class="btn btn-primary" ng-click="search()">Find Movie</button>
     </form>
   </div>
-  <div class="results col-md-6 col-md-offset-3" ng-if="movie" style="margin-top: 20px;">
-    <img ng-src="{{movie.Poster}}" style="display: block; margin: auto;">
+  <div class="results col-md-6 col-md-offset-3" ng-if="movie" style="margin: 20px 0 50px 0;">
+    <img ng-src="{{movie.Poster}}" style="display: block; margin: 0 auto 10px auto;">
     <div class="clearfix row">
       <div class="form-group col-md-6">
         <label>Title</label>
@@ -60,7 +60,7 @@
     </div>
     <div class="form-group">
       <label>Plot</label>
-      <textarea style="overflow-y: scroll; height: 200px;" type="Text" class="form-control" ng-model="movie.Plot" readonly />
+      <textarea style="overflow-y: scroll; height: 150px;" type="Text" class="form-control" ng-model="movie.Plot" readonly />
     </div>
   </div>
 </div>
