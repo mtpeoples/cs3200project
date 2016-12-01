@@ -12,13 +12,15 @@ app.use(express.static(path.join(__dirname, 'bower_components')));
 
 require('./src/server/app.js')(app, mongoose);
 
+var port = process.env.PORT || 8082;
+
 app.get('*', function(req, res) {
   res.sendFile(__dirname + '/src/client/index.html');
 });
 
-var server = app.listen(8082, function() {
+var server = app.listen(process.env.PORT || 8082, function() {
 
-  var port = server.address().port;
+  // var port = server.address().port;
 
   console.log('http server listening @: ' + port)
 });
