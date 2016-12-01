@@ -2,9 +2,7 @@ var express = require('express');
 var path = require('path');
 var mongoose = require('mongoose');
 
-var uristring =
-  process.env.MONGOLAB_URI ||
-  'mongodb://localhost/cs3200project';
+var uristring = process.env.MONGOLAB_URI || 'mongodb://127.0.0.1/cs3200project';
 
 var db = mongoose.connect(uristring);
 
