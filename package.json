@@ -1,0 +1,19 @@
+{
+  "name": "cs3200-project",
+  "version": "1.0.0",
+  "description": "imdb knockoff for cs3200 final project",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongoose": "^4.7.0",
+    "q": "^1.4.1",
+    "query-string": "^4.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Matt Peoples",
+  "license": "ISC"
+}

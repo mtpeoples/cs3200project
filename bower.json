@@ -1,0 +1,25 @@
+{
+  "name": "cs3200-project",
+  "version": "0.0.0",
+  "authors": [
+    "Matthew Peoples <mtpeoples5@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "0.3.1"
+  }
+}
