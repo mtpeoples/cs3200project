@@ -35,7 +35,7 @@ module.exports = function(app, model) {
             data.Actors = data.Actors.split(', ');
 
             model.create(data).then(function(movie) {
-              res.json(movie);
+              res.status(201).json(movie);
             }, function(err) {
             	res.status(400).send(err);
             });
@@ -44,9 +44,30 @@ module.exports = function(app, model) {
 
         return http.request(options, callback).end();
       }
-      res.json(movie);
+      res.status(201).json(movie);
     }, function(err) {
       res.status(404).send(err);
+    });
+  });
+
+  app.put("/api/movie/:id", function(req, res) {
+    var id = req.params.id;
+    var movie = req.body;
+
+    model.updateMovie(id, movie).then(function(movie) {
+      res.status(200).json(movie);
+    }, function(err) {
+      res.status(400).send(err);
+    });
+  });
+
+  app.delete("/api/movie/:id", function(req, res) {
+    var id = req.params.id;
+    
+    model.deleteMovie(id).then(function() {
+      res.status(200).send();
+    }, function(err) {
+      res.send(400).send(err);
     });
   });
 }

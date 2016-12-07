@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 var uristring = process.env.MONGODB_URI || 'mongodb://localhost/cs3200project';
@@ -8,6 +9,7 @@ var db = mongoose.connect(uristring);
 
 var app = express();
 
+app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'src')));
 app.use(express.static(path.join(__dirname, 'bower_components')));
 

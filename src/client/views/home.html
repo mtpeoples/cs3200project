@@ -13,36 +13,36 @@
     <div class="clearfix row">
       <div class="form-group col-md-6">
         <label>Title</label>
-        <input type="Text" class="form-control" ng-model="movie.Title" readonly />
+        <input type="Text" class="form-control" ng-model="movie.Title" />
       </div>
       <div class="form-group col-md-6">
         <label>Year</label>
-        <input type="Text" class="form-control" ng-model="movie.Year" readonly />
+        <input type="Text" class="form-control" ng-model="movie.Year" />
       </div>
     </div>
     <div class="clearfix row">
       <div class="form-group col-md-6">
         <label>Rating</label>
-        <input type="Text" class="form-control" ng-model="movie.Rated" readonly />
+        <input type="Text" class="form-control" ng-model="movie.Rated" />
       </div>
       <div class="form-group col-md-6">
         <label>Release Date</label>
-        <input type="Text" class="form-control" ng-model="movie.Released" readonly />
+        <input type="Text" class="form-control" ng-model="movie.Released" />
       </div>
     </div>
     <div class="clearfix row">
       <div class="form-group col-md-6">
         <label>Runtime</label>
-        <input type="Text" class="form-control" ng-model="movie.Runtime" readonly />
+        <input type="Text" class="form-control" ng-model="movie.Runtime" />
       </div>
       <div class="form-group col-md-6">
         <label>Director</label>
-        <input type="Text" class="form-control" ng-model="movie.Director" readonly />
+        <input type="Text" class="form-control" ng-model="movie.Director" />
       </div>
     </div>
     <div class="form-group">
       <label>Genres</label>
-      <input type="Text" class="form-control" ng-model="movie.Genre" readonly />
+      <input type="Text" class="form-control" ng-model="movie.Genre" />
     </div>
     <div class="form-group">
       <label>Actors</label>
@@ -51,16 +51,20 @@
     <div class="clearfix row">
       <div class="form-group col-md-6">
         <label>IMDb Rating</label>
-        <input type="Text" class="form-control" ng-model="movie.imdbRating" readonly />
+        <input type="Text" class="form-control" ng-model="movie.imdbRating"  />
       </div>
       <div class="form-group col-md-6">
         <label>IMDb Votes</label>
-        <input type="Text" class="form-control" ng-model="movie.imdbVotes" readonly />
+        <input type="Text" class="form-control" ng-model="movie.imdbVotes"  />
       </div>
     </div>
-    <div class="form-group">
+   <!--  <div class="form-group">
       <label>Plot</label>
-      <textarea style="overflow-y: scroll; height: 150px;" type="Text" class="form-control" ng-model="movie.Plot" readonly />
-    </div>
+      <textarea style="overflow-y: scroll; height: 150px;" type="Text" class="form-control" ng-model="movie.Plot"  />
+    </div> -->
+  </div>
+  <div>
+    <button class="btn btn-info" ng-click="update()">Update</button>
+    <button class="btn btn-danger" ng-click="delete()">Delete</button>
   </div>
 </div>
