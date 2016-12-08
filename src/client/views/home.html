@@ -58,12 +58,12 @@
         <input type="Text" class="form-control" ng-model="movie.imdbVotes"  />
       </div>
     </div>
-   <!--  <div class="form-group">
+    <!-- <div class="form-group">
       <label>Plot</label>
       <textarea style="overflow-y: scroll; height: 150px;" type="Text" class="form-control" ng-model="movie.Plot"  />
     </div> -->
   </div>
-  <div>
+  <div ng-if="movie" style="padding-top: 39px;">
     <button class="btn btn-info" ng-click="update()">Update</button>
     <button class="btn btn-danger" ng-click="delete()">Delete</button>
   </div>
